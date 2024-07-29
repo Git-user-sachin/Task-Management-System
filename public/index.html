@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Task Management System</h1>
+        <div id="auth">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="tasks" style="display:none;">
+            <h2>Tasks</h2>
+            <ul id="task-list"></ul>
+            <input type="text" id="title" placeholder="Task Title">
+            <textarea id="description" placeholder="Task Description"></textarea>
+            <button onclick="createTask()">Add Task</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
